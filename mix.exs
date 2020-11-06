@@ -33,6 +33,8 @@ defmodule Rearranger.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:floki, ">= 0.27.0", only: :test},
+      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:phoenix, "~> 1.5.6"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
